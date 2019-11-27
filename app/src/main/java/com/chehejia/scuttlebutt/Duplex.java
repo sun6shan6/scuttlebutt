@@ -2,6 +2,7 @@ package com.chehejia.scuttlebutt;
 
 import android.util.Log;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -103,6 +104,10 @@ public class Duplex {
         void update(List<Update> update , Callback callback) {
             callback.onReceive(update);
         }
+
+    }
+
+    public void read(Method method) {
 
     }
 
